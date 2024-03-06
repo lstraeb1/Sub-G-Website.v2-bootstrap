@@ -10,3 +10,14 @@ navToggleBtn.addEventListener('click', () => {
       body.style.overflowY = 'hidden';
     }
   });
+
+const interchangingWords = document.getElementById('interchanging-words');
+const wordOptions = ["hard-working", "encouraging", "friendly", "curious", "family"];
+let currentIndex = 0;
+
+const changeLastWord = () => {
+  interchangingWords.textContent = wordOptions[currentIndex];
+  currentIndex = (currentIndex + 1) % wordOptions.length;
+};
+
+setInterval(changeLastWord, 1000);
