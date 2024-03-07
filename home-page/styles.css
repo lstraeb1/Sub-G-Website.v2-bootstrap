@@ -145,6 +145,10 @@ button.navbar-toggler:active {
   text-wrap: nowrap;
 }
 
+.hidden {
+  display: none;
+}
+
 .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
   color: var(--highlight-red);
 }
