@@ -449,10 +449,9 @@ button.navbar-toggler:active {
 
 #leave-review {
   padding: 1.25rem;
-  background-color: var(--alt-gray);
+  background-color: var(--gray-1);
   border: none;
   border-radius: 10px;
-  color: white;
   font-size: 1.75rem;
   white-space: nowrap;
   box-shadow: 0 8px 10px 0 rgba(28, 28, 28, 0.2);
@@ -463,11 +462,11 @@ button.navbar-toggler:active {
 
 #leave-review a {
   text-decoration: none;
-  color: white;
+  color: black;
 }
 
 #leave-review:hover {
-  background-color: var(--alt-gray-highlight);
+  background-color: gray;
   color: white;
 }
 
@@ -647,7 +646,6 @@ footer {
     .section-2 {
       background-image: none;
     }
-    
 
     #buttons-container {
       flex-direction: column;
@@ -661,7 +659,8 @@ footer {
     .section-3 {
       height: auto;
       padding-bottom: 40px;
-      background-position: top 180px left 0;
+      background-position: top 200px left 0;
+      padding-top: 40px;
     }
 
     #traits-container {
@@ -729,7 +728,7 @@ footer {
     }
 
     #members-say-subtitle p {
-      font-size: 1.5rem;
+      font-size: 2rem;
     }
 }
 
@@ -754,11 +753,7 @@ footer {
   }
 
   .section-3 {
-    background-color: var(--main-gray);
-    background-image: url('../Photos/gym-bg.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top 140px left 0;
+    background-position: top 210px left 0;
   }
 }
 
@@ -768,5 +763,9 @@ footer {
     flex: 1;
     overflow-y: auto;
     height: 100dvh;
+  }
+
+  .section-3 {
+    background-position: top 250px left 0;
   }
 }
