@@ -726,6 +726,10 @@ footer {
     border-radius: 0;
   }
 
+  .input-container {
+    border-radius: 0;
+  }
+
   #submit-contact-form {
     margin-bottom: 30px;
     box-shadow: 0 4px 10px 0 rgba(180, 4, 4, 0.2);
