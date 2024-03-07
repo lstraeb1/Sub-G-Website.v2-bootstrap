@@ -1,7 +1,10 @@
 const body = document.body;
 const navToggleBtn = document.querySelector('.navbar-toggler');
-const navbar = document.getElementById('navbar');
+const navbar = document.querySelector('.navbar');
 const navbarCollapse = document.querySelector('.collapse');
+const loginMobile = document.getElementById('log-in-mobile');
+const joinUsMobile = document.getElementById('join-us-mobile');  
+const container0 = document.querySelector('.container-0');
 const imgContainer = document.getElementById('classes-img-container');
 const classSkillsHeader = document.getElementById('class-skills-header');
 const classSkillsSubtitle = document.getElementById('class-skills-subtitle');
@@ -74,9 +77,14 @@ classOptionSelect(0);
 
 navToggleBtn.addEventListener('click', () => {
     if (navToggleBtn.classList.contains('collapsed')) {
-      body.style.overflowY = 'auto';
+        body.style.overflowY = 'auto';
+        navbar.style.maxHeight = null;
+        loginMobile.classList.add('hidden');
+        joinUsMobile.classList.add('hidden');
     } else {
-      body.style.overflowY = 'hidden';
-      navbar.style.overflowY = 'auto';
+        body.style.overflowY = 'hidden';
+        navbar.style.maxHeight = '100vh';
+        loginMobile.classList.remove('hidden');
+        joinUsMobile.classList.remove('hidden');
     }
-  });
+});
