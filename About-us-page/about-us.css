@@ -145,6 +145,10 @@ button.navbar-toggler:active {
   text-wrap: nowrap;
 }
 
+.hidden {
+  display: none;
+}
+
 .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
   color: var(--highlight-red);
 }
@@ -583,11 +587,17 @@ footer {
       transition: opacity 0.7s ease-in-out;
     }
 
+    #log-in-mobile a,
+    #join-us-mobile a {
+      color: var(--alt-gray-highlight);
+    }
+
     .navbar-collapse.show .navbar-nav .nav-item .nav-link {
       opacity: 1;
     }
 
     .navbar-text {
+      display: none;
       background-color: var(--main-gray);
       box-shadow: none;
       margin-left: 0;
@@ -603,30 +613,11 @@ footer {
     }
 
     .become-member {
-      background-color: var(--maroon);
-      color: white;
-      text-decoration: none;
-      text-wrap: nowrap;
-      padding: 1.4rem;
-      border-radius: 10px;
-      box-shadow: 0 8px 10px 0 rgba(180, 4, 4, 0.2);
-      font-weight: normal;
-      font-size: 2.5rem;
-      transition: all .2s ease-in-out;
-      margin-left: 1px;
-      box-shadow: none;
+      display: none;
     }
 
     .collapse .navbar-text .log-in {
-      font-size: 3rem;
-      padding: 1.5rem 2rem 1.5rem 0;
-      margin-left: 2vw;
-      margin-right: 2vw;
-      text-decoration: none;
-      position: relative;
-      color: var(--main-red);
-      text-wrap: nowrap;
-      font-weight: bold;
+      display: none;
     }
 
     .section-1,
@@ -743,7 +734,7 @@ footer {
 
   .navbar-collapse .navbar-nav .nav-item .nav-link {
     margin-left: 10px;
-    font-size: 8rem;
+    font-size: 7rem;
     margin-bottom: -10%;
     transition: 0.4s ease-in; 
   }
