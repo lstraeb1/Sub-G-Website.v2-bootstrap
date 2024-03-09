@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Schedule | Sub-G Brazilian Jiu-Jitsu</title>
+		<link rel="stylesheet" href="schedule.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/da3b8fb560.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<section class="nav-section">
+      <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
+        <div class="container container-0">
+          <a class="navbar-brand" href="../home-page/index.html">
+            <img src="../Photos/Sub-G-textonly-logo_copy-removebg-preview.png" class="img-responsive" height="30px">          
+          </a>
+          <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="toggler-icon top-bar"></span>
+            <span class="toggler-icon middle-bar"></span>
+            <span class="toggler-icon bottom-bar"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="../home-page/index.html" target="_blank">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#classes-container" target="_blank">Classes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" target="_blank">Schedule</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../About-us-page/about-us.html" target="_blank">About</a>        
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact-us-container" target="_blank">Contact Us</a>
+              </li>
+              <li class="nav-item hidden" id="log-in-mobile">
+                <a class="nav-link nav-link-secondary" href="" target="_blank">Log-in</a>
+              </li>
+              <li class="nav-item hidden" id="join-us-mobile">
+                <a class="nav-link nav-link-secondary" href="" target="_blank">Join Now</a>
+              </li>
+            </ul>
+            <div class="navbar-text d-flex justify-content-center align-items-center mx-md-auto text-center">
+              <a href="" target="_blank" class="mx-2 log-in">Log-in<i class="fa-solid fa-chevron-right"></i></a>
+              <a href="" target="_blank" class="mx-2 become-member">Become a Member</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </section>
+		<section class="section-1">
+			<div class="container" id="container-1">
+				<div class="col-12 text-center" id="schedule-header-container">
+					<h1>Schedule</h1>
+				</div>
+				<div class="dropdown justify-content-center d-flex">
+					<button class="btn col-2" id="filter-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">All Classes<i class="fa-solid fa-chevron-down"></i></button>
+					<ul class="dropdown-menu col-2">
+						<li><a class="dropdown-item" id="all-filter-btn" href="#">All Classes</a></li>
+						<li><a class="dropdown-item" id="bjj-filter-btn" href="#">Brazilian Jiu-Jitsu</a></li>
+						<li><a class="dropdown-item" id="beg-jj-filter-btn" href="#">Beginner's Jiu-Jitsu</a></li>
+						<li><a class="dropdown-item" id="youth-jj-filter-btn" href="#">Youth Jiu-Jitsu</a></li>
+						<li><a class="dropdown-item" id="striking-filter-btn" href="#">Striking</a></li>
+						<li><a class="dropdown-item" id="judo-filter-btn" href="#">Judo</a></li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<section class="section-2">
+			<div class="calendar-container" id="calendar-container">
+				<div class="weekday-container">
+					<div class="calendar-column" id="monday">
+						<div class="calendar-header-container">
+							<h1>Monday</h1>
+						</div>
+						<div class="calendar-block block-1 beg-jj">
+							<div class="calendar-time-container">
+								<h2>7:00AM</h2>
+							</div>
+							<div class="calendar-subtitle-container">
+								<h3>Beginner's Jiu-jitsu</h2>
+							</div>
+							<div class="calendar-description-container">
+								<p>Cover the basics of BJJ first thing in the morning</p>
+							</div>
+						</div>
+						<div class="calendar-block youth-jj">
+							<div class="calendar-time-container">
+								<h2>5:00PM</h2>
+							</div>
+							<div class="calendar-subtitle-container">
+								<h3>Youth Jiu-jitsu</h2>
+							</div>
+							<div class="calendar-description-container">
+								<p>Kids can work up a sweat while training Brazilian Jiu-Jitsu</p>
+							</div>
+						</div>
+						<div class="calendar-block bjj">
+							<div class="calendar-time-container">
+								<h2>6:00PM</h2>
+							</div>
+							<div class="calendar-subtitle-container">
+								<h3>Brazilian Jiu-jitsu</h2>
+							</div>
+							<div class="calendar-description-container">
+								<p>Work on technique through a combination of drilling and rolling</p>
+							</div>
+						</div>
+						<div class="calendar-block beg-jj">
+							<div class="calendar-time-container">
+								<h2>7:00PM</h2>
+							</div>
+							<div class="calendar-subtitle-container beg-jj">
+								<h3>Beginner's Jiu-jitsu</h2>
+							</div>
+							<div class="calendar-description-container">
+								<p>Cover the basics of BJJ to finish your day</p>
+							</div>
+						</div>
+					</div>
+					<div class="calendar-column" id="tuesday">
+						<div class="calendar-header-container">
+							<h1>Tuesday</h1>
+						</div>
+						<div class="calendar-block block-1 bjj">
+							<div class="calendar-time-container">
+								<h2>10:00AM</h2>
+							</div>
+							<div class="calendar-subtitle-container">
+								<h3>Brazilian Jiu-jitsu</h2>
+							</div>
+							<div class="calendar-description-container">
+								<p>Work on technique through a combination of drilling and rolling</p>
+							</div>
+						</div>
+						<div class="calendar-block youth-jj">
+							<div class="calendar-time-container">
+								<h2>5:00PM</h2>
+							</div>
+							<div class="calendar-subtitle-container">
+								<h3>Youth Jiu-jitsu</h2>
+							</div>
+							<div class="calendar-description-container">
+								<p>Kids can work up a sweat while training Brazilian Jiu-Jitsu</p>
+							</div>
+						</div>
+						<div class="calendar-block bjj">
+							<div class="calendar-time-container">
+								<h2>6:00PM</h2>
+							</div>
+							<div class="calendar-subtitle-container">
+								<h3>Brazilian Jiu-jitsu</h2>
+							</div>
+							<div class="calendar-description-container">
+								<p>Work on technique through a combination of drilling and rolling</p>
+							</div>
+						</div>
+						<div class="calendar-block beg-jj">
+							<div class="calendar-time-container">
+								<h2>7:00PM</h2>
+							</div>
+							<div class="calendar-subtitle-container">
+								<h3>Beginner's Jiu-jitsu</h2>
+							</div>
+							<div class="calendar-description-container">
+								<p>Cover the basics of BJJ to finish your day</p>
+							</div>
+						</div>
+						<div class="calendar-block bjj">
+							<div class="calendar-time-container">
+								<h2>8:00PM</h2>
+							</div>
+							<div class="calendar-subtitle-container">
+								<h3>Brazilian Jiu-jitsu</h2>
+							</div>
+							<div class="calendar-description-container">
+								<p>Work on technique through a combination of drilling and rolling</p>
+							</div>
+						</div>
+					</div>
+					<div class="calendar-column" id="wednesday">
+						<div class="calendar-header-container">
+							<h1>Wednesday</h1>
+						</div>
+						<div class="calendar-block block-1 beg-jj">
+							<div class="calendar-time-container">
+								<h2>7:00AM</h2>
+							</div>
+							<div class="calendar-subtitle-container">
+								<h3>Beginner's Jiu-jitsu</h2>
+							</div>
+							<div class="calendar-description-container">
+								<p>Cover the basics of BJJ first thing in the morning</p>
+							</div>
+						</div>
+						<div class="calendar-block youth-jj">
+							<div class="calendar-time-container">
+								<h2>5:00PM</h2>
+							</div>
+							<div class="calendar-subtitle-container">
+								<h3>Youth Jiu-jitsu</h2>
+							</div>
+							<div class="calendar-description-container">
+								<p>Kids can work up a sweat while training Brazilian Jiu-Jitsu</p>
+							</div>
+						</div>
+						<div class="calendar-block judo">
+							<div class="calendar-time-container">
+								<h2>5:30PM</h2>
+							</div>
+							<div class="calendar-subtitle-container">
+								<h3>Judo</h2>
+							</div>
+							<div class="calendar-description-container">
+								<p>develop your skills through a mix of technique-focused training and sparring</p>
+							</div>
+						</div>
+						<div class="calendar-block bjj">
+							<div class="calendar-time-container">
+								<h2>6:00PM</h2>
+							</div>
+							<div class="calendar-subtitle-container">
+								<h3>Brazilian Jiu-Jitsu</h2>
+							</div>
+							<div class="calendar-description-container">
+								<p>Work on technique through a combination of drilling and rolling</p>
+							</div>
+						</div>
+						<div class="calendar-block beg-jj">
+							<div class="calendar-time-container">
+								<h2>7:00PM</h2>
+							</div>
+							<div class="calendar-subtitle-container">
+								<h3>Beginner's Jiu-Jitsu</h2>
+							</div>
+							<div class="calendar-description-container">
+								<p>Cover the basics of BJJ to finish your day</p>
+							</div>
+						</div>
+					</div>
+					<div class="calendar-column" id="thursday">
+						<div class="calendar-header-container">
+							<h1>Thursday</h1>
+						</div>
+						<div class="calendar-block block-1 bjj">
+							<div class="calendar-time-container">
+								<h2>10:00AM</h2>
+							</div>
+							<div class="calendar-subtitle-container">
+								<h3>Brazilian Jiu-jitsu</h2>
+							</div>
+							<div class="calendar-description-container">
+								<p>Work on technique through a combination of drilling and rolling</p>
+							</div>
+						</div>
+						<div class="calendar-block youth-jj">
+							<div class="calendar-time-container">
+								<h2>5:00PM</h2>
+							</div>
+							<div class="calendar-subtitle-container">
+								<h3>Youth Jiu-jitsu</h2>
+							</div>
+							<div class="calendar-description-container">
+								<p>Kids can work up a sweat while training Brazilian Jiu-Jitsu</p>
+							</div>
+						</div>
+						<div class="calendar-block bjj">
+							<div class="calendar-time-container">
+								<h2>6:00PM</h2>
+							</div>
+							<div class="calendar-subtitle-container">
+								<h3>Brazilian Jiu-Jitsu</h2>
+							</div>
+							<div class="calendar-description-container">
+								<p>Work on technique through a combination of drilling and rolling</p>
+							</div>
+						</div>
+						<div class="calendar-block beg-jj">
+							<div class="calendar-time-container">
+								<h2>7:00PM</h2>
+							</div>
+							<div class="calendar-subtitle-container">
+								<h3>Beginner's Jiu-Jitsu</h2>
+							</div>
+							<div class="calendar-description-container">
+								<p>Cover the basics of BJJ to finish your day</p>
+							</div>
+						</div>
+						<div class="calendar-block bjj">
+							<div class="calendar-time-container">
+								<h2>8:00PM</h2>
+							</div>
+							<div class="calendar-subtitle-container">
+								<h3>Brazilian Jiu-jitsu</h2>
+							</div>
+							<div class="calendar-description-container">
+								<p>Work on technique through a combination of drilling and rolling</p>
+							</div>
+						</div>
+					</div>
+					<button id="toggle-button-1" class="custom-button"><i class="fa-solid fa-chevron-right" style="color: black;"></i></button>
+				</div>
+				<div class="weekend-container">
+					<button id="toggle-button-2" class="custom-button"><i class="fa-solid fa-chevron-left" style="color: black;"></i></button>
+					<div class="calendar-column" id="friday">
+						<div class="calendar-header-container">
+							<h1>Friday</h1>
+						</div>
+						<div class="calendar-block block-1 beg-jj">
+							<div class="calendar-time-container">
+								<h2>7:00AM</h2>
+							</div>
+							<div class="calendar-subtitle-container">
+								<h3>Beginner's Jiu-jitsu</h2>
+							</div>
+							<div class="calendar-description-container">
+								<p>Cover the basics of BJJ first thing in the morning</p>
+							</div>
+						</div>
+						<div class="calendar-block bjj">
+							<div class="calendar-time-container">
+								<h2>6:00PM</h2>
+							</div>
+							<div class="calendar-subtitle-container">
+								<h3>Brazilian Jiu-jitsu</h2>
+							</div>
+							<div class="calendar-description-container">
+								<p>Work on technique through a combination of drilling and rolling</p>
+							</div>
+						</div>
+						<div class="calendar-block beg-jj">
+							<div class="calendar-time-container">
+								<h2>7:00PM</h2>
+							</div>
+							<div class="calendar-subtitle-container">
+								<h3>Beginner's Jiu-jitsu</h2>
+							</div>
+							<div class="calendar-description-container">
+								<p>Cover the basics of BJJ to finish your day</p>
+							</div>
+						</div>
+						<div class="calendar-block striking">
+							<div class="calendar-time-container">
+								<h2>7:00PM</h2>
+							</div>
+							<div class="calendar-subtitle-container">
+								<h3>Striking</h2>
+							</div>
+							<div class="calendar-description-container">
+								<p>Work on striking technique through pad and bag-work</p>
+							</div>
+						</div>
+					</div>
+					<div class="calendar-column" id="saturday">
+						<div class="calendar-header-container">
+							<h1>Saturday</h1>
+						</div>
+						<div class="calendar-block block-1 bjj">
+							<div class="calendar-time-container">
+								<h2>10:00AM</h2>
+							</div>
+							<div class="calendar-subtitle-container">
+								<h3>Brazilian Jiu-jitsu</h2>
+							</div>
+							<div class="calendar-description-container">
+								<p>Work on technique through a combination of drilling and rolling</p>
+							</div>
+						</div>
+						<div class="calendar-block striking">
+							<div class="calendar-time-container">
+								<h2>11:00AM</h2>
+							</div>
+							<div class="calendar-subtitle-container">
+								<h3>Striking</h2>
+							</div>
+							<div class="calendar-description-container">
+								<p>Put your striking technique to use in sparring</p>
+							</div>
+						</div>
+					</div>
+					<div class="calendar-column" id="sunday">
+						<div class="calendar-header-container">
+							<h1>Sunday</h1>
+						</div>
+						<div class="calendar-block block-1 bjj beg-jj youth-jj striking judo">
+							<div class="calendar-time-container">
+								<h2>10:00AM</h2>
+							</div>
+							<div class="calendar-subtitle-container">
+								<h3>Open Mat</h2>
+							</div>
+							<div class="calendar-description-container">
+								<p>Learn at your own pace at open mat</p>
+							</div>
+						</div>
+						<div class="calendar-block">
+							<div class="calendar-time-container">
+								<h2>5:00PM</h2>
+							</div>
+							<div class="calendar-subtitle-container">
+								<h3>Youth Jiu-jitsu</h2>
+							</div>
+							<div class="calendar-description-container">
+								<p>Kids can work up a sweat while training Brazilian Jiu-Jitsu</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer>
+      <div class="container" id="container-5">
+        <div class="row align-items-center">
+          <div class="col-12 col-md-2 justify-content-center d-flex justify-content-lg-start" id="footer-logo-container">
+            <img src="../Photos/subg-nb-logo.png" height="200px">
+          </div>
+          <div class="col-12 col-md-3 text-center text-lg-start" id="important-info-1">
+            <a href="">subgbjj@subgbjj.com</a>
+            <a href="">(845) 123-4567</a>
+          </div>
+          <div class="col-12 col-md-5 text-center text-lg-start" id="important-info-2">
+            <a href="https://maps.app.goo.gl/rQCDykC4QPE24Zcx5">169 Pike St Unit #2, Port Jervis, NY 12771</a>
+          </div>
+          <div class="col-12 col-md-2 text-center" id="socials">
+            <a href="" class="mx-3"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="" class="mx-3"><i class="fa-brands fa-instagram"></i></a>
+            <a href="" class="mx-3"><i class="fa-brands fa-youtube"></i></a>
+            <a href="" class="mx-3"><i class="fa-brands fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+		<script src="schedule.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	</body>
+</html>
