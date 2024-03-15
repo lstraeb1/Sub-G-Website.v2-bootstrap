@@ -39,6 +39,49 @@ const scheduleSelector = (event) => {
 toggleBtn1.addEventListener('click', scheduleSelector);
 toggleBtn2.addEventListener('click', scheduleSelector);
 
+// toggle between days on mobile view
+
+const mobileToggleLeft = document.querySelector('.mobile-btn-left');
+const mobileToggleRight = document.querySelector('.mobile-btn-right');
+
+let currentTranslateX = 0;
+const maxTranslateX = -600; 
+
+function updateButtonStyles() {
+	if (currentTranslateX === 0) {
+			mobileToggleLeft.classList.add('inactive');
+	} else {
+			mobileToggleLeft.classList.remove('inactive');
+	}
+}
+
+function scheduleSelectorMobile(event) {
+    const targetButton = event.target;
+
+    // Check if the left button should be disabled
+    if (currentTranslateX === 0 && targetButton.classList.contains('mobile-btn-left')) {
+      return; 
+    }
+
+    // Check if the right button should be disabled
+    if (currentTranslateX === maxTranslateX && targetButton.classList.contains('mobile-btn-right')) {
+        return; // Do nothing if the Sunday column is in view and right button is clicked
+    }
+
+    // Translate calendar content
+    if (targetButton.classList.contains('mobile-btn-right')) {
+        currentTranslateX -= 100; // Assuming each day's width is 100vw
+    } else {
+        currentTranslateX += 100; // Assuming each day's width is 100vw
+    }
+
+    calendarContent.style.transform = `translateX(${currentTranslateX}vw)`;
+}
+
+mobileToggleLeft.addEventListener('click', scheduleSelectorMobile);
+mobileToggleRight.addEventListener('click', scheduleSelectorMobile);
+
+
 // place red dot next to day of the week (calendar-header-container) today is
 
 const calendarHeader = document.getElementById('calendar-header-container');

@@ -56,26 +56,41 @@
     </section>
 		<section class="section-1">
 			<div class="container" id="container-1">
-				<div class="col-12 text-center" id="schedule-header-container">
-					<h1>Schedule</h1>
-				</div>
-				<div class="dropdown justify-content-center d-flex">
-					<button class="btn col-2" id="filter-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">All Classes<i class="fa-solid fa-chevron-down"></i></button>
-					<ul class="dropdown-menu col-2">
-						<li><a class="dropdown-item" id="all-filter-btn" href="#">All Classes</a></li>
-						<li><a class="dropdown-item" id="bjj-filter-btn" href="#">Brazilian Jiu-Jitsu</a></li>
-						<li><a class="dropdown-item" id="beg-jj-filter-btn" href="#">Beginner's Jiu-Jitsu</a></li>
-						<li><a class="dropdown-item" id="youth-jj-filter-btn" href="#">Youth Jiu-Jitsu</a></li>
-						<li><a class="dropdown-item" id="striking-filter-btn" href="#">Striking</a></li>
-						<li><a class="dropdown-item" id="judo-filter-btn" href="#">Judo</a></li>
-					</ul>
+				<div class="row">
+					<div class="col-12 col-lg-6" id="schedule-header">
+						<div class="col-12 col-lg-12 text-center text-lg-start" id="schedule-header-container">
+							<h1>Class Schedule</h1>
+						</div>
+						<div class="col-12 col-lg-12 text-center text-lg-start" id="schedule-paragraph-container">
+							<p>Embark on your Martial Arts journey at your own pace by exploring our flexible class schedule. Whether you're an early riser, a night owl, or prefer weekends, our diverse class offerings 
+								ensure there's a slot that fits seamlessly into your routine.</p>
+						</div>
+					</div>
+					<div class="col-12 col-lg-6" id="img-container">
+						<img src="../Photos/phone-hand-img.png" height="450px" id="phone-hand-img">
+					</div>
 				</div>
 			</div>
 		</section>
 		<section class="section-2">
+			<div class="dropdown justify-content-center d-flex">
+				<button class="btn dropdown-toggle col-8 col-md-5 col-lg-2" id="filter-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">All Classes</button>
+				<ul class="dropdown-menu col-8 col-md-5 col-lg-2">
+					<li><a class="dropdown-item" id="all-filter-btn" href="#">All Classes</a></li>
+					<li><a class="dropdown-item" id="bjj-filter-btn" href="#">Brazilian Jiu-Jitsu</a></li>
+					<li><a class="dropdown-item" id="beg-jj-filter-btn" href="#">Beginner's Jiu-Jitsu</a></li>
+					<li><a class="dropdown-item" id="youth-jj-filter-btn" href="#">Youth Jiu-Jitsu</a></li>
+					<li><a class="dropdown-item" id="striking-filter-btn" href="#">Striking</a></li>
+					<li><a class="dropdown-item" id="judo-filter-btn" href="#">Judo</a></li>
+				</ul>
+			</div>
+			<div id="buttons-container">
+				<button id="toggle-button-1m" class="mobile-btn mobile-btn-left"><i class="fa-solid fa-chevron-left" style="color: black;"></i></button>
+				<button id="toggle-button-2m" class="mobile-btn mobile-btn-right"><i class="fa-solid fa-chevron-right" style="color: black;"></i></button>
+			</div>
 			<div class="calendar-container" id="calendar-container">
 				<div class="weekday-container">
-					<div class="calendar-column" id="monday">
+					<div class="calendar-column" id="monday" data-column="1">
 						<div class="calendar-header-container">
 							<h1>Monday</h1>
 						</div>
@@ -124,7 +139,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="calendar-column" id="tuesday">
+					<div class="calendar-column" id="tuesday" data-column="2">
 						<div class="calendar-header-container">
 							<h1>Tuesday</h1>
 						</div>
@@ -218,7 +233,7 @@
 								<h3>Judo</h2>
 							</div>
 							<div class="calendar-description-container">
-								<p>develop your skills through a mix of technique-focused training and sparring</p>
+								<p>Develop your skills through a mix of technique-focused training and sparring</p>
 							</div>
 						</div>
 						<div class="calendar-block bjj">
