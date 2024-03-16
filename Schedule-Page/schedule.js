@@ -22,6 +22,17 @@ navToggleBtn.addEventListener('click', () => {
 	}
 });
 
+// slide hand holding phone into view upon page loadup
+// document.addEventListener("scroll", function() {
+// 	const phoneHandImg = document.getElementById('phone-hand-img');
+
+// 	function phoneHand() {
+// 			phoneHandImg.style.transform = "translateX(0)";
+// 	};
+
+// 	phoneHand();
+// });
+
 // toggle between weekday and weekend
 
 const toggleBtn1 = document.getElementById('toggle-button-1');
@@ -58,21 +69,18 @@ function updateButtonStyles() {
 function scheduleSelectorMobile(event) {
     const targetButton = event.target;
 
-    // Check if the left button should be disabled
     if (currentTranslateX === 0 && targetButton.classList.contains('mobile-btn-left')) {
       return; 
     }
 
-    // Check if the right button should be disabled
     if (currentTranslateX === maxTranslateX && targetButton.classList.contains('mobile-btn-right')) {
-        return; // Do nothing if the Sunday column is in view and right button is clicked
+        return; 
     }
 
-    // Translate calendar content
     if (targetButton.classList.contains('mobile-btn-right')) {
-        currentTranslateX -= 100; // Assuming each day's width is 100vw
+        currentTranslateX -= 100; 
     } else {
-        currentTranslateX += 100; // Assuming each day's width is 100vw
+        currentTranslateX += 100;
     }
 
     calendarContent.style.transform = `translateX(${currentTranslateX}vw)`;

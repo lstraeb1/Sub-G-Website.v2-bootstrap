@@ -226,6 +226,11 @@ button.navbar-toggler:active {
   font-family: "Bebas Neue", sans-serif;
 }
 
+#phone-hand-img {
+  max-width: 30vw;
+  transform: translateX(5rem);
+}
+
 .section-2 {
 	height: 195vh;
   min-height: auto;
@@ -353,6 +358,7 @@ button.navbar-toggler:active {
   box-shadow: 2px 2px 4px var(--gray-1);
   border: none;
 	border-radius: 10px;
+  z-index: 3;
 }
 
 .custom-button:active {
@@ -514,6 +520,15 @@ footer {
     background-position: center center;
   }
 
+  .container-1 {
+    height: auto;
+  }
+
+  #phone-hand-img {
+    max-height: 100vh;
+    transform: translateX(25vw);
+  }
+
   .section-2 {
     height: auto;
     overflow-x: hidden;
@@ -533,6 +548,13 @@ footer {
     justify-content: center;
   }
 
+  #phone-hand-img {
+    max-width: 100vw;
+    position: none;
+    bottom: 0;
+    right: 0;
+  }
+
   .calendar-block {
     height: 190px;
   }
@@ -540,6 +562,12 @@ footer {
   .calendar-description-container p {
     line-height: 1.25;
     width: 90%;
+  }
+
+  footer {
+    height: auto;
+    padding-bottom: 30px;
+    background-color: var(--alt-gray-highlight);
   }
 }
 
@@ -676,6 +704,14 @@ footer {
 
 @media (max-width: 576px) {
 
+  body {
+    overflow-x: hidden;
+  }
+
+  .row {
+    max-width: 100vw;
+  }
+
   .navbar-collapse {
     flex: 1;
     overflow-y: auto;
@@ -688,8 +724,13 @@ footer {
     margin-bottom: -10%;
   }
 
+  #img-container {
+    padding: 0;
+  }
+
   #phone-hand-img {
-    max-height: 250px;
+    max-height: 80vh;
+    transform: translateX(2vw);
   }
 
   .calendar-column {
@@ -732,7 +773,7 @@ footer {
     height: 100vh;
   }
 
-  #phone-hand-img {
+  /* #phone-hand-img {
     max-height: 200px;
-  }
+  } */
 }
