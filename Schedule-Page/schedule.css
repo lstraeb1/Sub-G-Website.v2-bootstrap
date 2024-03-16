@@ -445,6 +445,7 @@ footer {
     min-height: 100%;
     width: 100vw;
     overflow-y: auto; /* Allow scrolling within the navbar */
+    transition: min-height 0.7s ease;
   }
   
   .navbar .container-0 .navbar-brand /* logo container */ {
