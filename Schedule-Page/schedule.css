@@ -160,6 +160,7 @@ button.navbar-toggler:active {
 .navbar-text {
   margin-left: 2vw;
   background: none;
+  z-index: 1;
 }
 
 .collapse .navbar-text .log-in {
@@ -476,7 +477,6 @@ footer {
   }
 
   .navbar-nav {
-    background: none;
     backdrop-filter: 0;
     -webkit-backdrop-filter: 0;
     border-radius: 0;
@@ -484,8 +484,8 @@ footer {
     box-shadow: none;
     margin-bottom: 0;
     margin-top: 5px;
-    background-color: none;
     height: 100vh;
+    background-color: rgba(0, 0, 0, 0);
   }
 
   .navbar-collapse .navbar-nav .nav-item .nav-link {
