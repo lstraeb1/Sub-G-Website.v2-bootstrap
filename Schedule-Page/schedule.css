@@ -446,10 +446,8 @@ footer {
 
   .navbar {
     background-color: var(--main-gray);
-    max-height: 100vh;
+    max-height: 130vh;
     width: 100vw;
-    overflow-y: auto; /* Allow scrolling within the navbar */
-    transition: min-height 0.7s ease;
     background-color: none;
     z-index: 100;
   }
@@ -487,6 +485,7 @@ footer {
     margin-bottom: 0;
     margin-top: 5px;
     background-color: none;
+    height: 100vh;
   }
 
   .navbar-collapse .navbar-nav .nav-item .nav-link {
@@ -519,11 +518,9 @@ footer {
 
   .navbar-text,
   .become-member,
-  .collapse .navbar-text .log-in {
+  .log-in {
     display: none;
   }
-
-
 
   .section-1 {
     height: auto;
@@ -562,10 +559,7 @@ footer {
   }
 
   #phone-hand-img {
-    max-width: 100vw;
-    position: none;
-    bottom: 0;
-    right: 0;
+    display: none;
   }
 
   .calendar-block {
@@ -779,12 +773,12 @@ footer {
 }
 
 @media (max-width: 350px) {
-
+/* 
   .navbar-collapse {
     flex: 1;
     overflow-y: auto;
     max-height: 100dvh;
-  }
+  } */
 
   /* #phone-hand-img {
     max-height: 200px;
