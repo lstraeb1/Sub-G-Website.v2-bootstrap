@@ -12,13 +12,13 @@ navToggleBtn.addEventListener('click', () => {
 	if (navToggleBtn.classList.contains('collapsed')) {
 			body.style.overflowY = 'auto';
 			navbar.style.maxHeight = null;
-			loginMobile.classList.add('hidden');
-			joinUsMobile.classList.add('hidden');
+			// loginMobile.classList.add('hidden');
+			// joinUsMobile.classList.add('hidden');
 	} else {
 			body.style.overflowY = 'hidden';
 			navbar.style.maxHeight = '100vh';
-			loginMobile.classList.remove('hidden');
-			joinUsMobile.classList.remove('hidden');
+			// loginMobile.classList.remove('hidden');
+			// joinUsMobile.classList.remove('hidden');
 	}
 });
 
