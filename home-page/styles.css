@@ -145,6 +145,10 @@ button.navbar-toggler:active {
   text-wrap: nowrap;
 }
 
+.nav-item-2 {
+  display: none;
+}
+
 .hidden {
   display: none;
 }
@@ -156,6 +160,7 @@ button.navbar-toggler:active {
 .navbar-text {
   margin-left: 2vw;
   background: none;
+  z-index: 1;
 }
 
 .collapse .navbar-text .log-in {
@@ -626,15 +631,20 @@ footer {
 
 @media (max-width: 992px) {
 
+  body {
+    overflow-x: hidden;
+  }
+
   body.no-scroll {
     overflow-y: hidden;
   }
 
   .navbar {
     background-color: var(--main-gray);
-    min-height: 100%;
+    max-height: 130vh;
     width: 100vw;
-    overflow-y: auto; /* Allow scrolling within the navbar */
+    background-color: none;
+    z-index: 100;
   }
   
   .navbar .container-0 .navbar-brand /* logo container */ {
@@ -662,14 +672,14 @@ footer {
 
   .navbar-nav {
     background: none;
-    background-color: var(--main-gray);
-    backdrop-filter: 0;
-    -webkit-backdrop-filter: 0;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
     border-radius: 0;
     border: none;
     box-shadow: none;
     margin-bottom: 0;
     margin-top: 5px;
+    height: 100vh;
   }
 
   .navbar-collapse .navbar-nav .nav-item .nav-link {
@@ -681,11 +691,16 @@ footer {
     text-align: start;
     text-wrap: nowrap;
     padding: 0;
-    margin: 0;
-    margin-left: 50px;
+    margin: 0 0 0 15px;
     text-shadow: 1px 1px 1px var(--alt-gray);
     opacity: 0;
-    transition: opacity 0.7s ease-in-out;
+    transition: opacity 0.7s ease;
+    background-color: none;
+    background: none;
+  }
+
+  .nav-item-2 {
+    display: block;
   }
 
   #log-in-mobile a,
@@ -699,7 +714,7 @@ footer {
 
   .navbar-text,
   .become-member,
-  .collapse .navbar-text .log-in {
+  .log-in {
     display: none;
   }
 
@@ -806,12 +821,6 @@ footer {
 }
 
 @media (max-width: 350px) {
-
-  .navbar-collapse {
-    flex: 1;
-    overflow-y: auto;
-    height: 100vh;
-  }
 
   .call-to-action a {
     font-size: 1.5rem;
