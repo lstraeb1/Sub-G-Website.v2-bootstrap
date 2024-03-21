@@ -478,8 +478,8 @@ footer {
 
   .navbar-nav {
     background: none;
-    backdrop-filter: 0;
-    -webkit-backdrop-filter: 0;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
     border-radius: 0;
     border: none;
     box-shadow: none;
