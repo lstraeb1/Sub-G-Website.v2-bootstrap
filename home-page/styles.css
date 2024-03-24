@@ -599,6 +599,10 @@ footer {
     margin-right: 1%;
   }
 
+  .navbar .container-0 .navbar-brand img /* logo container */ {
+    height: 20px;
+  }
+
   .collapse .navbar-text .fa-solid {
     display: none;
     margin-left: 0;
@@ -720,6 +724,7 @@ footer {
 
   .container-1 {
     height: auto;
+    min-height: 100vh;
   }
 
   .section-2 {

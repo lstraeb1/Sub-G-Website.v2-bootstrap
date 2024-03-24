@@ -217,8 +217,12 @@ button.navbar-toggler:active {
 	background-position: center center;
 }
 
+#container-1 {
+  padding-top: 130px;
+
+}
+
 #schedule-header-container h1 {
-	padding-top: 130px;
 	font-size: 8rem;
 	color: var(--maroon);
 	font-family: "Bebas Neue", sans-serif;
@@ -232,8 +236,7 @@ button.navbar-toggler:active {
 }
 
 #phone-hand-img {
-  max-width: 30vw;
-  transform: translateX(5rem);
+  height: 30%;
 }
 
 .section-2 {
