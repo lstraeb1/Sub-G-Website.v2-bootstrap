@@ -209,6 +209,126 @@ button.navbar-toggler:active {
   background-color: var(--highlight-red);
 }
 
+/* Section 1 */
+
+.section-1 {
+  height: 100vh;
+  background-image: url("../Photos/Subg-brick-bg.png");
+  background-size: cover;
+  background-position: center center;
+}
+
+#container-1 {
+  padding-top: 100px;
+}
+
+#header-container h1 {
+  color: var(--main-red);
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 7rem;
+  text-shadow: 1px 1px 0px var(--alt-gray-highlight);
+}
+
+#period-selector-container {
+  background: linear-gradient(180deg, rgb(175, 175, 175), white);
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  margin-top: 10%;
+  width: 474px;
+}
+
+.period-selector {
+  font-family: "Be Vietnam", sans-serif;
+  border-radius: 30px;
+  font-size: 1.75rem;
+  padding: 1rem;
+  text-wrap: nowrap;
+  color: black;
+  background: none;
+  border: none;
+  z-index: 100;
+  transition: color 0.4s ease-in-out;
+}
+
+#background-red {
+  background: linear-gradient(180deg, var(--maroon), var(--main-red));
+  position: relative;
+  right: 465px;
+  border-radius: 30px;
+  transition: right 0.4s ease-in-out;
+}
+
+.section-2 {
+  height: 100vh;
+  background-color: var(--main-gray);
+}
+
+#container-2 {
+  position: absolute;
+  top: 395px;
+  right: 0;
+  left: 0;
+}
+
+.price-square {
+  background-color: rgba(228, 228, 228, 0.8);
+  margin: 30px;
+  border-radius: 10px;
+}
+
+.plan-header-container,
+.plan-subtitle-container,
+.plan-price-container,
+.plan-sticker-container {
+  margin-left: 35px; /* Adjust the margin value as needed */
+  opacity: 1;
+}
+
+.plan-header-container {
+  color: var(--main-red);
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 5rem;
+  opacity: 1;
+}
+
+.plan-subtitle-container {
+  color: black;
+  font-family: "Be Vietnam", sans-serif;
+  font-size: 1.75rem;
+}
+
+.plan-price-container h1 {
+  color: black;
+  font-size: 7rem;
+  font-family: "Bebas Neue", sans-serif;
+  margin-top: 10px;
+}
+
+#per-month {
+  font-family: "Be Vietnam", sans-serif;
+  font-size: 1.75rem;
+}
+
+.plan-sticker-container {
+  font-family: "Be Vietnam", sans-serif;
+  color: var(--alt-gray-highlight);
+  font-size: 2rem;
+  margin-top: -15px;
+}
+
+.sign-up {
+  background-color: var(--maroon);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 2.5rem;
+  padding: 1rem;
+  margin-top: 30px;
+}
+
 @media (max-width: 1200px) {
 
   .navbar-text {
