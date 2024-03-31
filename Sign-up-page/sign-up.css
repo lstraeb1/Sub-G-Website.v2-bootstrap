@@ -21,6 +21,7 @@
 html {
   font-size: 62.5%;
   font-family: 'Bebas Neue', sans-serif;
+  background-color: var(--main-gray);
 }
 
 body {
@@ -274,14 +275,15 @@ button.navbar-toggler:active {
 
 .price-square {
   background-color: rgba(228, 228, 228, 0.8);
-  margin: 30px;
+  margin: 10px;
   border-radius: 10px;
 }
 
 .plan-header-container,
 .plan-subtitle-container,
 .plan-price-container,
-.plan-sticker-container {
+.plan-sticker-container,
+.plan-included-container {
   margin-left: 35px; /* Adjust the margin value as needed */
   opacity: 1;
 }
@@ -289,21 +291,23 @@ button.navbar-toggler:active {
 .plan-header-container {
   color: var(--main-red);
   font-family: "Bebas Neue", sans-serif;
-  font-size: 5rem;
+  font-size: 6rem;
   opacity: 1;
+  margin-top: 30px;
 }
 
 .plan-subtitle-container {
   color: black;
   font-family: "Be Vietnam", sans-serif;
-  font-size: 1.75rem;
+  font-size: 2rem;
+  margin-top: -15px;
 }
 
 .plan-price-container h1 {
   color: black;
   font-size: 7rem;
   font-family: "Bebas Neue", sans-serif;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 #per-month {
@@ -327,6 +331,20 @@ button.navbar-toggler:active {
   font-size: 2.5rem;
   padding: 1rem;
   margin-top: 30px;
+}
+
+.plan-included-container,
+.plan-included-container ul {
+  font-family: "Be Vietnam", sans-serif;
+  font-size: 2rem;
+  list-style: none;
+  padding: 0 0 20px 0;
+  margin-top: 30px;
+  color: black;
+}
+
+.plan-included-container i {
+  margin: 25px 20px 0 0;
 }
 
 @media (max-width: 1200px) {
@@ -378,7 +396,7 @@ button.navbar-toggler:active {
     max-height: 130vh;
     width: 100vw;
     background-color: none;
-    z-index: 100;
+    z-index: 1;
   }
   
   .navbar .container-0 .navbar-brand /* logo container */ {
@@ -480,6 +498,86 @@ button.navbar-toggler:active {
     margin-left: 10px;
     font-size: 7rem;
     margin-bottom: -10%;
+  }
+
+  .section-1 {
+    height: 100vh;
+    background-image: url("../Photos/Subg-brick-bg-mobile.png");
+    background-size: cover;
+    background-position: center center;
+  }
+
+  #period-selector-container {
+    padding: 5px;
+    margin-top: 10%;
+    width: 350px;
+  }
+  
+  .period-selector {
+    font-size: 1.5rem;
+    transition: color 0.4s ease-in-out;
+    z-index: 1;
+  }
+
+  #background-red {
+    transition: right 0.4s ease-in-out;
+  }
+
+  .section-2 {
+    height: auto;
+  }
+
+  #container-2 {
+    top: 500px;
+  }
+
+  .price-square {
+    background-color: rgba(228, 228, 228, 1);
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  .plan-header-container,
+  .plan-subtitle-container,
+  .plan-price-container,
+  .plan-sticker-container,
+  .plan-included-container {
+    margin-left: 15px; 
+  }
+
+  .plan-header-container {
+    font-size: 5rem;
+    margin-top: 20px;
+  }
+  
+  .plan-subtitle-container {
+    font-size: 1.75rem;
+    margin-top: -15px;
+  }
+  
+  .plan-price-container h1 {
+    font-size: 6rem;
+    margin-top: 10px;
+  }
+  
+  #per-month {
+    font-family: "Be Vietnam", sans-serif;
+    font-size: 1.5rem;
+  }
+  
+  .plan-sticker-container {
+    font-size: 1.75rem;
+  }
+  
+  .plan-included-container,
+  .plan-included-container ul {
+    font-size: 1.75rem;
+    padding: 0 0 20px 0;
+    margin-top: 0;
+  }
+  
+  .plan-included-container i {
+    margin: 25px 20px 0 0;
   }
 }
 
