@@ -396,7 +396,7 @@ button.navbar-toggler:active {
     max-height: 130vh;
     width: 100vw;
     background-color: none;
-    z-index: 1;
+    z-index: 5;
   }
   
   .navbar .container-0 .navbar-brand /* logo container */ {
@@ -514,9 +514,10 @@ button.navbar-toggler:active {
   }
   
   .period-selector {
-    font-size: 1.5rem;
+    font-size: 1.35rem;
     transition: color 0.4s ease-in-out;
     z-index: 1;
+    text-wrap: nowrap;
   }
 
   #background-red {
