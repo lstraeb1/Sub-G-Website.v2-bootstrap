@@ -107,7 +107,7 @@ const priceOptionObject = [
 				<li><i class="fa-regular fa-circle-check"></i>Unlimited Striking</li>
 				<li><i class="fa-regular fa-circle-check"></i>Unlimited Judo</li>
 				<li><i class="fa-regular fa-circle-check"></i>Unlimited Open Mat</li>
-				<li><i class="fa-regular fa-circle-check"></i>2 Free Private Lesson/Month</li>
+				<li><i class="fa-regular fa-circle-check"></i>2 Free Private Lessons/Month</li>
 			</ul>
 		`
 	}
@@ -197,3 +197,88 @@ periodSelector3.addEventListener('click', function() {
 });
 
 periodSelector1.click();
+
+const question1 = document.getElementById('question-1');
+const answer1 = document.getElementById('answer-1');
+const extendButton1 = document.getElementById('extend-button-1');
+const chevron1 = document.getElementById('chevron-1');
+
+const question2 = document.getElementById('question-2');
+const answer2 = document.getElementById('answer-2');
+const extendButton2 = document.getElementById('extend-button-2');
+const chevron2 = document.getElementById('chevron-2');
+
+const question3 = document.getElementById('question-3');
+const answer3 = document.getElementById('answer-3');
+const extendButton3 = document.getElementById('extend-button-3');
+const chevron3 = document.getElementById('chevron-3');
+
+const question4 = document.getElementById('question-4');
+const answer4 = document.getElementById('answer-4');
+const extendButton4 = document.getElementById('extend-button-4');
+const chevron4 = document.getElementById('chevron-4');
+
+function extendFaq1() {
+	if (answer1.innerHTML.trim() !== "") {
+		answer1.innerHTML = "";
+		question1.style.fontWeight = "normal"; 
+		chevron1.classList.remove('fa-chevron-up');
+		chevron1.classList.add('fa-chevron-down');
+	} else {
+		answer1.innerHTML = `<p>Save up to $25/month and get 2 free private lessons/month by choosing an annual plan. Our annual plans are great 
+		for customers who live locally and can commit to the extended timeframe. Join the family at Sub-G on your path to martial arts mastery</p>`;
+		question1.style.fontWeight = "bold";
+		chevron1.classList.remove('fa-chevron-down');
+		chevron1.classList.add('fa-chevron-up');
+	}
+};
+
+function extendFaq2() {
+	if (answer2.innerHTML.trim() !== "") {
+		answer2.innerHTML = "";
+		question2.style.fontWeight = "normal"; 
+		chevron2.classList.remove('fa-chevron-up');
+		chevron2.classList.add('fa-chevron-down');
+	} else {
+		answer2.innerHTML = `<p>At Sub-G we welcome individuals of all experience levels to join our community. Whether you're a complete beginner or have previous martial 
+		arts experience, our classes are designed to accommodate everyone. The relaxed environment of Sub-G coupled with its qualified instructors make it a great place to train for everyone.</p>`;
+		question2.style.fontWeight = "bold";
+		chevron2.classList.remove('fa-chevron-down');
+		chevron2.classList.add('fa-chevron-up');
+	}
+};
+
+function extendFaq3() {
+	if (answer3.innerHTML.trim() !== "") {
+		answer3.innerHTML = "";
+		question3.style.fontWeight = "normal"; 
+		chevron3.classList.remove('fa-chevron-up');
+		chevron3.classList.add('fa-chevron-down');
+	} else {
+		answer3.innerHTML = `<p>At Sub-G, the safety and well-being of our young students are our top priorities. We implement rigorous safety protocols and age-appropriate 
+		training methods to ensure a positive and secure learning experience for children of all ages. Additionally, we maintain a clean and padded training area to minimize the risk of injury.</p>`;
+		question3.style.fontWeight = "bold";
+		chevron3.classList.remove('fa-chevron-down');
+		chevron3.classList.add('fa-chevron-up');
+	}
+};
+
+function extendFaq4() {
+	if (answer4.innerHTML.trim() !== "") {
+		answer4.innerHTML = "";
+		question4.style.fontWeight = "normal"; 
+		chevron4.classList.remove('fa-chevron-up');
+		chevron4.classList.add('fa-chevron-down');
+	} else {
+		answer4.innerHTML = `<p>training in martial arts can provide students with practical self-defense skills, mental discipline, and improved confidence. Through disciplined practice, students develop mental resilience, 
+		concentration, and self-control. Our supportive community fosters positive attitudes, respect, and camaraderie among students.</p>`;
+		question4.style.fontWeight = "bold";
+		chevron4.classList.remove('fa-chevron-down');
+		chevron4.classList.add('fa-chevron-up');
+	}
+};
+
+extendButton1.addEventListener('click', extendFaq1);
+extendButton2.addEventListener('click', extendFaq2);
+extendButton3.addEventListener('click', extendFaq3);
+extendButton4.addEventListener('click', extendFaq4);

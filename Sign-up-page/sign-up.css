@@ -262,7 +262,7 @@ button.navbar-toggler:active {
 }
 
 .section-2 {
-  height: 100vh;
+  height: 30vh;
   background-color: var(--main-gray);
 }
 
@@ -345,6 +345,65 @@ button.navbar-toggler:active {
 
 .plan-included-container i {
   margin: 25px 20px 0 0;
+}
+
+.section-3 {
+  background-color: var(--main-gray);
+  height: 50vh;
+}
+
+#faq-header-container h1 {
+  color: var(--main-red);
+  font-size: 6rem;
+  font-family: "Bebas Neue", sans-serif;
+  margin-bottom: 30px;
+}
+
+.faq-block {
+  border: 1px solid rgb(232, 232, 232);
+  border-radius: 10px;
+  background-color: white;
+  padding: 1.5rem;
+  margin-bottom: 5px;
+}
+
+.block-header-container h1 {
+  font-size: 2rem;
+  font-weight: normal;
+  color: black;
+  text-align: left;
+}
+
+.extend-button {
+  border: none;
+  background: none;
+}
+
+.answer p {
+  color: black;
+  font-size: 1.75rem;
+  text-align: left;
+  cursor: text;
+}
+
+@media (max-width: 1800px) {
+  .section-2 {
+    height: 100vh;
+    background-color: var(--main-gray);
+  }
+
+  .plan-header-container,
+  .plan-subtitle-container,
+  .plan-price-container,
+  .plan-sticker-container,
+  .plan-included-container {
+    margin-left: 15px; /* Adjust the margin value as needed */
+  }
+
+  .section-3 {
+    background-color: var(--main-gray);
+    height: 100vh;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -476,6 +535,10 @@ button.navbar-toggler:active {
   .navbar-brand img {
     height: 20px;
   }
+
+  .section-3 {
+    height: auto;
+  }
 }
 
 @media (max-width: 576px) {
@@ -525,6 +588,10 @@ button.navbar-toggler:active {
   }
 
   .section-2 {
+    height: 140vh;
+  }
+
+  .section-3 {
     height: auto;
   }
 
