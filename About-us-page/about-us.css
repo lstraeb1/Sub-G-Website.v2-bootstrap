@@ -145,6 +145,10 @@ button.navbar-toggler:active {
   text-wrap: nowrap;
 }
 
+.nav-item-2 {
+  display: none;
+}
+
 .hidden {
   display: none;
 }
@@ -156,6 +160,7 @@ button.navbar-toggler:active {
 .navbar-text {
   margin-left: 2vw;
   background: none;
+  z-index: 1;
 }
 
 .collapse .navbar-text .log-in {
@@ -500,39 +505,43 @@ footer {
 }
 
 @media (max-width: 1200px) {
-    .navbar-text {
-        margin-left: 1vw;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
+  .navbar-text {
+    margin-left: 1vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
     
-    .navbar .container-0 .navbar-brand /* logo container */ {
-    margin-right: 1%;
-    }
+  .navbar .container-0 .navbar-brand /* logo container */ {
+  margin-right: 1%;
+  }
 
-    .collapse .navbar-text .fa-solid {
-    display: none;
-    margin-left: 0;
-    margin-right: 0;
-    }
+  .collapse .navbar-text .fa-solid {
+  display: none;
+  margin-left: 0;
+  margin-right: 0;
+  }
 
-    .become-member {
-    background-color: var(--maroon);
-    color: white;
-    text-decoration: none;
-    text-wrap: nowrap;
-    padding: 0.75rem;
-    border-radius: 10px;
-    box-shadow: 0 8px 10px 0 rgba(180, 4, 4, 0.2);
-    font-weight: normal;
-    font-size: 1.5rem;
-    transition: all .2s ease-in-out;
-    margin-left: 1px;
-    }
+  .become-member {
+  background-color: var(--maroon);
+  color: white;
+  text-decoration: none;
+  text-wrap: nowrap;
+  padding: 0.75rem;
+  border-radius: 10px;
+  box-shadow: 0 8px 10px 0 rgba(180, 4, 4, 0.2);
+  font-weight: normal;
+  font-size: 1.5rem;
+  transition: all .2s ease-in-out;
+  margin-left: 1px;
+  }
 }
 
 @media (max-width: 992px) {
+
+  body {
+    overflow-x: hidden;
+  }
 
   body.no-scroll {
     overflow-y: hidden;
@@ -540,9 +549,10 @@ footer {
 
   .navbar {
     background-color: var(--main-gray);
-    min-height: 100%;
+    max-height: 130vh;
     width: 100vw;
-    overflow-y: auto; /* Allow scrolling within the navbar */
+    background-color: none;
+    z-index: 5;
   }
   
   .navbar .container-0 .navbar-brand /* logo container */ {
@@ -570,14 +580,14 @@ footer {
 
   .navbar-nav {
     background: none;
-    background-color: var(--main-gray);
-    backdrop-filter: 0;
-    -webkit-backdrop-filter: 0;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
     border-radius: 0;
     border: none;
     box-shadow: none;
     margin-bottom: 0;
     margin-top: 5px;
+    height: 100vh;
   }
 
   .navbar-collapse .navbar-nav .nav-item .nav-link {
@@ -589,11 +599,16 @@ footer {
     text-align: start;
     text-wrap: nowrap;
     padding: 0;
-    margin: 0;
-    margin-left: 50px;
+    margin: 0 0 0 15px;
     text-shadow: 1px 1px 1px var(--alt-gray);
     opacity: 0;
-    transition: opacity 0.7s ease-in-out;
+    transition: opacity 0.7s ease;
+    background-color: none;
+    background: none;
+  }
+
+  .nav-item-2 {
+    display: block;
   }
 
   #log-in-mobile a,
@@ -709,18 +724,24 @@ footer {
 
 @media (max-width: 576px) {
 
+  body {
+    overflow-x: hidden;
+  }
+
+  .row {
+    max-width: 100vw;
+  }
+
   .navbar-collapse {
     flex: 1;
     overflow-y: auto;
-    height: 100dvh;
-    transition: height 0.4s ease-in;
+    max-height: 100dvh;
   }
 
   .navbar-collapse .navbar-nav .nav-item .nav-link {
     margin-left: 10px;
     font-size: 7rem;
     margin-bottom: -10%;
-    transition: 0.4s ease-in; 
   }
   
   #container-1 {
