@@ -553,6 +553,13 @@ footer {
     background-color: var(--main-gray);
   }
 
+  #container-2 {
+    position: absolute;
+    top: 455px;
+    right: 0;
+    left: 0;
+  }
+
   footer {
     height: auto;
     padding-bottom: 20px;
