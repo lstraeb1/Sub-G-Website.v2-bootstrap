@@ -218,6 +218,11 @@ const answer4 = document.getElementById('answer-4');
 const extendButton4 = document.getElementById('extend-button-4');
 const chevron4 = document.getElementById('chevron-4');
 
+const question5 = document.getElementById('question-5');
+const answer5 = document.getElementById('answer-5');
+const extendButton5 = document.getElementById('extend-button-5');
+const chevron5 = document.getElementById('chevron-5');
+
 function extendFaq1() {
 	if (answer1.innerHTML.trim() !== "") {
 		answer1.innerHTML = "";
@@ -278,7 +283,23 @@ function extendFaq4() {
 	}
 };
 
+function extendFaq5() {
+	if (answer5.innerHTML.trim() !== "") {
+		answer5.innerHTML = "";
+		question5.style.fontWeight = "normal"; 
+		chevron5.classList.remove('fa-chevron-up');
+		chevron5.classList.add('fa-chevron-down');
+	} else {
+		answer5.innerHTML = `<p>While some of our classes involve training in a traditional BJJ gi, it is not required. We encourage students to wear atheletic clothing
+		that they can be comfortable and agile in. We recommend trying out one of our free classes before purchasing gis, rashguards, mouthguards, or any other equipment.</p>`;
+		question5.style.fontWeight = "bold";
+		chevron5.classList.remove('fa-chevron-down');
+		chevron5.classList.add('fa-chevron-up');
+	}
+};
+
 extendButton1.addEventListener('click', extendFaq1);
 extendButton2.addEventListener('click', extendFaq2);
 extendButton3.addEventListener('click', extendFaq3);
 extendButton4.addEventListener('click', extendFaq4);
+extendButton5.addEventListener('click', extendFaq5);

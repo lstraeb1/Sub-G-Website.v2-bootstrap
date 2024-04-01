@@ -386,9 +386,28 @@ button.navbar-toggler:active {
   cursor: text;
 }
 
+footer {
+  height: 40vh;
+  background-color: var(--alt-gray-highlight);
+}
+
+#important-info-1 {
+  display: flex;
+  flex-direction: column;
+}
+
+#important-info-1 a,
+#important-info-2 a,
+#socials a {
+  color: white;
+  font-size: 2rem;
+  text-decoration: none;
+  font-family: "Be Vietnam", sans-serif;
+}
+
 @media (max-width: 1800px) {
   .section-2 {
-    height: 100vh;
+    height: 110vh;
     background-color: var(--main-gray);
   }
 
@@ -527,6 +546,11 @@ button.navbar-toggler:active {
   .become-member,
   .log-in {
     display: none;
+  }
+
+  footer {
+    height: auto;
+    padding-bottom: 20px;
   }
 }
 
