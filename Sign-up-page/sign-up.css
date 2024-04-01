@@ -178,7 +178,7 @@ button.navbar-toggler:active {
 
 .collapse .navbar-text .fa-solid {
   position: absolute;
-  bottom: 17px;
+  bottom: 18px;
   right: 8px; 
   transition: right 0.3s ease; 
 }
@@ -214,7 +214,7 @@ button.navbar-toggler:active {
 
 .section-1 {
   height: 100vh;
-  background-image: url("../Photos/Subg-brick-bg.png");
+  background-image: url("../Photos/Subg-brick-bg-mobile.png");
   background-size: cover;
   background-position: center center;
 }
@@ -349,7 +349,7 @@ button.navbar-toggler:active {
 
 .section-3 {
   background-color: var(--main-gray);
-  height: 50vh;
+  height: 70vh;
 }
 
 #faq-header-container h1 {
@@ -548,6 +548,11 @@ footer {
     display: none;
   }
 
+  .section-2 {
+    height: 40vh;
+    background-color: var(--main-gray);
+  }
+
   footer {
     height: auto;
     padding-bottom: 20px;
@@ -612,11 +617,12 @@ footer {
   }
 
   .section-2 {
-    height: 140vh;
+    height: 150vh;
   }
 
   .section-3 {
     height: auto;
+    padding-bottom: 100px;
   }
 
   #container-2 {
