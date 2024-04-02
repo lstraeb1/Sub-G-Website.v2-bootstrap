@@ -346,18 +346,18 @@ button.navbar-toggler:active {
 .class-option {
   background-color: white;
   text-wrap: nowrap;
-  color: var(--main-red);
+  color: var(--maroon);
   font-size: 1.5rem;
   font-weight: bold;
   padding: 1rem;
-  border: 2px solid var(--main-red);
+  border: 2px solid var(--maroon);
   border-radius: 5px;
   margin-top: 5px;
   transition: 0.2s ease-in-out;
 }
 
 .class-option:hover {
-  background-color: var(--main-red);
+  background-color: var(--maroon);
   color: white;
 }
 

@@ -94,7 +94,7 @@ const classOptionSelect = (index) => {
     });
 
     const selectedButton = allButtons[index];
-    selectedButton.style.backgroundColor = 'red';
+    selectedButton.style.backgroundColor = 'var(--maroon)';
     selectedButton.style.color = 'white';
 }
 
