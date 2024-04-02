@@ -443,7 +443,7 @@ button.navbar-toggler:active {
 
 #section-3 {
   background-color: var(--main-gray);
-  height: 100vh;
+  height: 60vh;
 }
 
 #container-3 {
@@ -451,14 +451,13 @@ button.navbar-toggler:active {
   padding-top: 20px;
   border-radius: 0 0 10px 10px;
   height: auto;
-  min-height: 70vh;
 }
 
 #contact-us-container {
   background-image: url('../Photos/sub-g-contact-bg.png');
   background-position: center;
   background-size: cover;
-  height: 100vh;
+  height: 100%;
   padding-bottom: 40px;
   border-radius: 0 0 0 5px;
 }
@@ -560,7 +559,7 @@ label[for="preferred-phone"], label[for="preferred-email"] {
 }
 
 #section-3 {
-  height: 80vh;
+  height: 60vh;
 }
 
 footer {
@@ -582,6 +581,11 @@ footer {
   font-family: "Be Vietnam", sans-serif;
 }
 
+@media (max-width: 1800px) {
+  #section-3 {
+    height: 80vh;
+  }
+}
 
 @media (max-width: 1200px) {
   .section-1 {
