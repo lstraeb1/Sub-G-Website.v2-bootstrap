@@ -45,30 +45,35 @@ const classOptionsObject = [
     {
         name: "Brazilian Jiu-Jitsu",
         image: "../Photos/BJJ_Photo_homepage-removebg-preview.png",
+        alt: "Grapplers image",
         header: "Develop Resilience and Precision",
         subtitle: "Enhance your problem-solving, adaptability, and physical conditioning.",
     },
     {
         name: "Judo",
         image: "../Photos/judo-img-copy.png",
+        alt: "Judo players image",
         header: "Fostering Strength and Technique",
         subtitle: "Master the art of adaptability, build inner strength, and hone precise techniques with Judo."
     },
     {
         name: "Youth Jiu-jitsu",
         image: "../Photos/youth-bjj-photo-copy.png",
+        alt: "Young grapplers image",
         header: "Empowering Young Minds",
         subtitle: "Unleash the potential of your child as they build resilience and learn essential life skills."
     },
     {
         name: "Striking",
         image: "../Photos/striking-class-photo-copy.png",
+        alt: "Boxers image",
         header: "Precision and Power Unleashed",
         subtitle: "Experience a journey of discipline, agility, and self-discovery, and unleash the fighter within you."
     },
     {
         name: "Beginner's Jiu-Jitsu",
         image: "../Photos/beginners-bjj-photo.png",
+        alt: "Beginner grapplers image",
         header: "Discover the Basics in Beginners Jiu-Jitsu",
         subtitle: "Learn the fundamentals and build a solid foundation as you delve into the art of grappling and self-defense."
     }
@@ -78,7 +83,7 @@ const classOptionsObject = [
 const classOptionSelect = (index) => {
     const selectedClass = classOptionsObject[index];
 
-    imgContainer.innerHTML = `<img src="${selectedClass.image}" class="img-fluid" height="300px">`;
+    imgContainer.innerHTML = `<img src="${selectedClass.image}" class="img-fluid" height="300px" alt="${selectedClass.alt}">`;
     classSkillsHeader.textContent = selectedClass.header;
     classSkillsSubtitle.textContent = selectedClass.subtitle;
 
