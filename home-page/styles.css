@@ -214,7 +214,7 @@ button.navbar-toggler:active {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: auto;
+  height: 80vh;
   font-family: 'Bebas Neue', sans-serif;
   width: 100vw;
   display: flex;
@@ -582,6 +582,10 @@ footer {
 }
 
 @media (max-width: 1800px) {
+  .section-1 {
+    height: 100vh;
+  }
+
   #section-3 {
     height: 80vh;
   }
