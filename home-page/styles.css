@@ -313,7 +313,7 @@ button.navbar-toggler:active {
 
 .section-2 {
   background-color: var(--main-gray);
-  padding-top: 5%;
+  padding-top: 5rem;
   padding-bottom: 40px;
   height: auto;
 }
