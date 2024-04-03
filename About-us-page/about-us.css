@@ -275,7 +275,7 @@ button.navbar-toggler:active {
 /* Section 2 */
 
 .section-2 {
-  height: 130vh;
+  height: 90vh;
   background-color: var(--main-gray);
   background-image: url('../Photos/teacher-photo.png');
   background-position: bottom 100px left 0;
@@ -382,7 +382,7 @@ button.navbar-toggler:active {
 /* Section 3 */
 
 .section-3 {
-  height: 120vh;
+  height: 80vh;
   background-color: var(--main-gray);
   background-image: url('../Photos/gym-bg.png');
   background-size: cover;
@@ -502,6 +502,16 @@ footer {
     font-size: 2rem;
     text-decoration: none;
     font-family: "Be Vietnam", sans-serif;
+}
+
+@media (max-width: 1800px) {
+  .section-2 {
+    height: 150vh;
+  }
+
+  .section-3 {
+    height: 120vh;
+  }
 }
 
 @media (max-width: 1200px) {
