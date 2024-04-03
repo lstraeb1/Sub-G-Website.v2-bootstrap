@@ -183,7 +183,7 @@ button.navbar-toggler:active {
 }
 
 .collapse .navbar-text .log-in:hover {
-  color: var(--main-red);
+  color: var(--main-red); 
 }
 
 .collapse .navbar-text .log-in:hover .fa-solid {
@@ -349,7 +349,7 @@ button.navbar-toggler:active {
 .calendar-subtitle-container h3 {
 	font-family: "Bebas Neue", sans-serif;
 	font-size: 2rem;
-	color: var(--main-red);
+	color: var(--maroon);
 }
 
 .calendar-description-container p {

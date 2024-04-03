@@ -1,13 +1,13 @@
 :root {
-    --main-red: #F51414;
-    --alt-red: #ff6347;
-    --maroon: #b40404;
-    --highlight-red: #c30707;
-    --main-gray: #F2F2F2;
-    --alt-gray: #1c1c1c;
-    --alt-gray-highlight: #313131;
-    --gray-1: #A4A4A4;
-    --gray-2: #F2F2F2;
+  --main-red: #F51414;
+  --alt-red: #ff6347;
+  --maroon: #b40404;
+  --highlight-red: #c30707;
+  --main-gray: #F2F2F2;
+  --alt-gray: #1c1c1c;
+  --alt-gray-highlight: #313131;
+  --gray-1: #A4A4A4;
+  --gray-2: #F2F2F2;
 }
 
 *,
