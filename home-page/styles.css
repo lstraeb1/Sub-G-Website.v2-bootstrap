@@ -593,7 +593,7 @@ footer {
 
 @media (max-width: 1200px) {
   .section-1 {
-    height: 100vh;
+    height: 80vh;
   }
 
   .navbar-text {
@@ -629,10 +629,6 @@ footer {
     font-size: 1.5rem;
     transition: all .2s ease-in-out;
     margin-left: 1px;
-  }
-
-  .intro-img-container img {
-    margin-top: 20%;
   }
 
   #email-phone {
@@ -791,7 +787,7 @@ footer {
   }
 
   .container-2 {
-    padding-top: 100%;
+    padding-top: 60%;
   }
 
   #email-phone {
@@ -813,9 +809,14 @@ footer {
     font-size: 7rem;
     margin-bottom: -10%;
   }
+
+  .intro-img-container img {
+    margin-top: 10vh;
+    max-height: 450px;
+  }
   
   .container-2 {
-    padding-top: 130%;
+    padding-top: 90%;
   }
 
   #email-phone a {
@@ -832,13 +833,13 @@ footer {
   }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 450px) {
 
   .call-to-action a {
     font-size: 1.5rem;
   }
 
   .container-2 {
-    padding-top: 160%;
+    padding-top: 150%;
   }
 }

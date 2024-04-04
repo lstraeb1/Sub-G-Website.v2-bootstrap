@@ -212,7 +212,7 @@ button.navbar-toggler:active {
 /* Section 1 */
 
 .section-1 {
-  height: 120dvh;
+  height: 90dvh;
   background-image: url('../Photos/about-us-bg.png');
   background-repeat: no-repeat;
   background-position: center center;
@@ -486,7 +486,7 @@ button.navbar-toggler:active {
 /* Footer */
 
 footer {
-    height: 40vh;
+    height: 30vh;
     background-color: var(--alt-gray-highlight);
 }
   
@@ -505,12 +505,21 @@ footer {
 }
 
 @media (max-width: 1800px) {
+
+  .section-1 {
+    height: 120vh;
+  }
+
   .section-2 {
     height: 150vh;
   }
 
   .section-3 {
     height: 120vh;
+  }
+
+  footer {
+    height: 40vh;
   }
 }
 
@@ -715,6 +724,7 @@ footer {
     .section-3 {
       height: auto;
       padding-bottom: 40px;
+      padding-top: 0;
       background-position: top 140px left 0;
     }
 
@@ -760,6 +770,7 @@ footer {
 
   .section-3 {
     background-position: top 210px left 0;
+    padding-top: 65px;
   }
 }
 

@@ -210,7 +210,7 @@ button.navbar-toggler:active {
 }
 
 .section-1 {
-	height: 75vh;
+	height: 55vh;
 	padding-bottom: 20px;
   background-image: url('../Photos/schedule-bg-2.png');
 	background-size: cover;
@@ -240,7 +240,7 @@ button.navbar-toggler:active {
 }
 
 .section-2 {
-	height: 195vh;
+	height: 135vh;
   min-height: auto;
   background: linear-gradient(var(--main-gray) 80%, var(--gray-1));
 }
@@ -277,7 +277,6 @@ button.navbar-toggler:active {
 #calendar-container {
 	display: flex;
 	font-display: row;
-	/* border: 2px solid pink; */
 	width: 200vw;
 	transition: 0.5s ease-in-out;
 	padding-bottom: 20px;
@@ -288,7 +287,6 @@ button.navbar-toggler:active {
 .weekend-container {
 	display: flex;
 	font-display: row;
-	/* border: 2px solid red; */
 	width: 100vw;
 	justify-content: center;
 }
@@ -386,7 +384,7 @@ button.navbar-toggler:active {
 /* Footer */
 
 footer {
-  height: 40vh;
+  height: 30vh;
   background-color: var(--alt-gray-highlight);
 }
 
@@ -402,6 +400,22 @@ footer {
   font-size: 2rem;
   text-decoration: none;
   font-family: "Be Vietnam", sans-serif;
+}
+
+@media (max-width: 1800px) {
+  .section-1 {
+    height: 80vh;
+  }
+
+  .section-2 {
+    height: 200vh;
+    min-height: auto;
+    background: linear-gradient(var(--main-gray) 80%, var(--gray-1));
+  }
+
+  footer {
+    height: 40vh;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -435,6 +449,20 @@ footer {
     font-size: 1.5rem;
     transition: all .2s ease-in-out;
     margin-left: 1px;
+  }
+
+  .section-1 {
+    height: 50vh;
+  }
+
+  .section-2 {
+    height: 130vh;
+    min-height: auto;
+    background: linear-gradient(var(--main-gray) 80%, var(--gray-1));
+  }
+
+  footer {
+    height: 30vh;
   }
 }
 
