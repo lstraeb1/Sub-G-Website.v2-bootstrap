@@ -572,6 +572,11 @@ footer {
     height: 20px;
   }
 
+  .section-2 {
+    height: 70vh;
+    background-color: var(--main-gray);
+  }
+
   .section-3 {
     height: auto;
   }
@@ -624,7 +629,7 @@ footer {
   }
 
   .section-2 {
-    height: 150vh;
+    height: 80vh;
   }
 
   .section-3 {
@@ -683,6 +688,12 @@ footer {
   
   .plan-included-container i {
     margin: 25px 20px 0 0;
+  }
+}
+
+@media (max-width: 380px) {
+  .section-2 {
+    height: 130vh;
   }
 }
 
