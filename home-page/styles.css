@@ -158,7 +158,7 @@ button.navbar-toggler:active {
 }
 
 .navbar-text {
-  margin-left: 2vw;
+  margin-left: 0vw;
   background: none;
   z-index: 1;
 }
@@ -210,11 +210,11 @@ button.navbar-toggler:active {
 }
 
 .section-1 {
-  background-image: url("../Photos/bg-waves.png");
+  background-image: url("../Photos/home-landing-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 80dvh;
+  height: 100dvh;
   font-family: 'Bebas Neue', sans-serif;
   width: 100vw;
   display: flex;
@@ -233,21 +233,18 @@ button.navbar-toggler:active {
 
 .intro-header-container h1 {
   font-size: 8rem;
-  color: var(--maroon);
+  color: var(--main-red);
   font-weight: bold;
   font-style: italic;
 }
 
 .intro-paragraph-container p {
-  color: black;
+  color: white;
   line-height: 1.5;
-  font-size: 2rem;
-  margin-top: 4rem;
-  font-family: "Be Vietnam Pro", sans-serif;
-}
-
-.call-to-action {
-  padding: 2% 0;
+  font-size: 1.75rem;
+  margin-top: 0rem;
+  margin-bottom: 50px;
+  font-family: "Be Vietnam", sans-serif;
 }
 
 .free-class {
@@ -593,7 +590,7 @@ footer {
 
 @media (max-width: 1200px) {
   .section-1 {
-    height: 80vh;
+    height: auto;
   }
 
   .navbar-text {
@@ -685,8 +682,8 @@ footer {
     border: none;
     box-shadow: none;
     margin-bottom: 0;
-    margin-top: 5px;
     height: 100vh;
+    justify-content: start;
   }
 
   .navbar-collapse .navbar-nav .nav-item .nav-link {
@@ -704,6 +701,8 @@ footer {
     transition: opacity 0.7s ease;
     background-color: none;
     background: none;
+    position: relative;
+    bottom: 100px;
   }
 
   .nav-item-2 {
